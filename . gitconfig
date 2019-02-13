@@ -1,0 +1,43 @@
+[alias]
+
+                ch = checkout
+
+                br = branch
+
+                ci = commit
+
+                st = status
+
+                last = log -1 HEAD
+
+                visual = !gitk
+
+                pull = fetch --all --prune && git pull --all
+
+                destroy = reset HEAD --hard
+
+                diff-br = diff --shortstat develop..HEAD
+
+[pull]
+
+                rebase = true
+
+[diff]
+
+                prompt = false
+
+[difftool]
+
+                prompt = false
+
+[user]
+
+                name = Giuliana Taylor
+
+[core]
+
+                excludesfile = C:/Users/giulianat/.gitignore
+
+[push]
+
+                default = current
