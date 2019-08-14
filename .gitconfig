@@ -8,6 +8,7 @@
 	lg = log --oneline --no-merges
 	visual = !gitk
 	pull = fetch --all --prune && git pull --all
+	push = push -u origin HEAD
 	destroy = reset HEAD --hard
 	diff-br = diff --shortstat develop..HEAD
 	brename = branch -m
