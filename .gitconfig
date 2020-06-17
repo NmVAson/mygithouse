@@ -25,7 +25,7 @@
 [user]
 	name = Giuliana Taylor
 [core]
-	excludesfile = C:/Users/giulianat/.gitignore
+	excludesfile = ~/.gitignore
 [push]
 	default = current
 [rebase]
