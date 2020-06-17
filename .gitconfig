@@ -7,7 +7,7 @@
 	last = log -1 HEAD
 	lg = log --oneline --no-merges
 	visual = !gitk
-	pull = fetch --all --prune && git pull --all
+	pull = pull --all --prune
 	push = push -u origin HEAD
 	destroy = reset HEAD --hard
 	diff-br = diff --shortstat develop..HEAD
@@ -15,11 +15,13 @@
 [pull]
 	rebase = true
 [merge]
-	tool = vsdiffmerge
+	tool = default-difftool
 [diff]
-	prompt = false
-[difftool]
-	prompt = false
+    	tool = default-difftool
+    	prompt = false
+[difftool "default-difftool"]
+    	cmd = code --wait --diff $LOCAL $REMOTE
+    	prompt = false
 [user]
 	name = Giuliana Taylor
 [core]
